@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { NavLink } from 'react-router-dom'
 function Header(props) {
     return (
         <div className="main-header">
@@ -27,19 +27,31 @@ function Header(props) {
                     </div>
                     <nav id="navbar" className="navbar order-last order-lg-0">
                         <ul>
-                            <li><a className="nav-link scrollto active" href="index.html">Home</a></li>
-                            <li><a className="nav-link scrollto" href="./pages/departments.html">Departments</a></li>
-                            <li><a className="nav-link scrollto" href="./pages/doctors.html">Doctors</a></li>
-                            <li><a className="nav-link scrollto " href="./pages/about.html">About</a></li>
-                            <li><a className="nav-link scrollto" href="./pages/contact.html">Contact</a></li>
+                            <li>
+                                <NavLink to={"/"} className="nav-link scrollto">Home</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to={"/Department"} className="nav-link scrollto">Departments</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to={"/Doctor"} className="nav-link scrollto">Doctors</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to={"/About"} className="nav-link scrollto">About</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to={"/Contact"} className="nav-link scrollto">Contact</NavLink>
+                            </li>
                         </ul>
                         <i className="bi bi-list mobile-nav-toggle" />
                     </nav>
-                    <a href="./pages/appointment.html" className="appointment-btn scrollto"><span className="d-none d-md-inline">Make an</span>
-                        Appointment</a>
-                    <a href="#" className="appointment-btn scrollto">
+                    <NavLink to={"/Appointment"} className="nav-link scrollto appointment-btn">
+                        <span className="d-none d-md-inline">Make an</span>
+                        Appointment
+                    </NavLink>
+                    <NavLink to={"/Auth"} className="nav-link scrollto appointment-btn">
                         <span className="d-none d-md-inline">Login/ Signup</span>
-                    </a>
+                    </NavLink>
                 </div>
             </header>
         </div>
