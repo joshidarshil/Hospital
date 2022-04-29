@@ -46,7 +46,7 @@ function Auth(props) {
                         </div>
                     </div>
 
-
+ 
                     {
                         usertype === 'Login' ?
                             <div className="text-center">
