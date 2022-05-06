@@ -11,7 +11,7 @@ import Auth from './Container/Auth/Auth';
 import About from './Container/About/About';
 import Contact from './Container/Contact/Contact'
 import Medicine from './Container/Medicine/Medicine';
-import List from './Component/List/List';
+import List from './Component/List/List'; 
 
 function App() {
   return (

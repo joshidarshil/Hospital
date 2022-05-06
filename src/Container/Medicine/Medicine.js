@@ -90,7 +90,7 @@ function Medicine(props) {
             <h2>Medicine</h2>
             <div className='row'>
             <List data={MedicineData}/>
-              <List data={EmployeData} />
+              <List data={EmployeData} /> 
 
             </div>
           </div>

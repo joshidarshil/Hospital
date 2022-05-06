@@ -11,10 +11,10 @@ function List({ data }) {
             return (
                 <>
                     <div key={i} className='col-3 mt-5'>
-                        <Card>
+                        <Card> 
                             <CardBody>
                                 <CardTitle>{d.name}</CardTitle>
-                                <CardSubtitle>{d.price}</CardSubtitle>
+                                <CardSubtitle>{d.price}</CardSubtitle> 
                                 <CardText>{d.expiry}</CardText>
                                 <Button>oder</Button>
                             </CardBody>
