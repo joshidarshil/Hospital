@@ -7,11 +7,11 @@ import { Route } from 'react-router-dom';
 import Department from './Container/Department/department';
 import Doctor from './Container/Doctor/Doctor';
 import Appointment from './Container/Appointment/Appointment';
-import Signup from './Container/sign-Up/Signup';
 import Auth from './Container/Auth/Auth';
 import About from './Container/About/About';
 import Contact from './Container/Contact/Contact'
-
+import Medicine from './Container/Medicine/Medicine';
+import List from './Component/List/List';
 
 function App() {
   return (
@@ -20,12 +20,19 @@ function App() {
       <Header />
       <Switch>
         <Route exact path={"/"} component={Home} />
-        <Route exact path={"/Department"} component={Department} />
-        <Route exact path={"/Doctor"} component={Doctor} />
-        <Route exact path={"/appointment"} component={Appointment}/>
-        <Route exact path={"/Auth"} component={Auth}/>
-        <Route exact path={"/About"} component={About}/>
-        <Route exact path={"/Contact"} component={Contact}/> 
+        <Route  path={"/Department"} component={Department} />
+        <Route  path={"/Doctor"} component={Doctor} />
+        <Route  path={"/appointment"} component={Appointment}/>
+        <Route  path={"/Auth"} component={Auth}/>
+        <Route  path={"/About"} component={About}/>
+        <Route  path={"/Contact"} component={Contact}/> 
+        <Route path={"/medicine"} component={Medicine}/>
+        <Route path={"/list"} component={List} />
+       
+
+
+
+        
         
 
 
