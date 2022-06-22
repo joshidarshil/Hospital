@@ -8,7 +8,7 @@ function List({ data }) {
     console.log(data);
     return (
         data.map((d, i) => {
-            return (
+            return ( 
                 <>
                     <div key={i} className='col-3 mt-5'>
                         <Card> 
